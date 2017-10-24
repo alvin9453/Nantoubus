@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>ec2cb4dd-9bd3-49ee-943e-8ba57ae6bde8</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Nantou_bus</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AboutUs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DataSource\AbstractDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\AbstractRecord.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\OfficeRecord.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SchoolRecord.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\AbstractGenericRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI.View\CallButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataSource\LocalSqlite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface.Location\ILocation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MasterPage.xaml.cs">
+      <DependentUpon>MasterPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model.TransportData\News.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model.TransportData\BusRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model.TransportData\RoutePrediction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\HistoryRecord.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MasterPageItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MyRecord.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Stop.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\StopOnRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NewsDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NumberSearch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\AbstractSQLiteRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\LocalDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\RouteSQLiteRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\StopOnRouteMysqlRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\StopOnRouteSQLiteRepositorycs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\StopMysqlRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\StopSQLiteRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI.Map\CustomMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI.Map\CustomPin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI.Map\CustomPinModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI.View\ContactInfoView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI.View\GoogleStreetView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI.View\StopArrivalPrediction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI.View\OperatorPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\RouteView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataSource\VoIP.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ISQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model.TransportData\StopOfRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Name.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Route.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\RouteStopPrediction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NewsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\StopDetailsView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PreSet.xaml.cs">
+      <DependentUpon>PreSet.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\AbstractMysqlRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\RouteMysqlRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\RouteStopPredictionMysqlRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoutePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SearchHistory.xaml.cs">
+      <DependentUpon>SearchHistory.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)TimeTablePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\StopPassingRouteView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)PreSet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SearchHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MasterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

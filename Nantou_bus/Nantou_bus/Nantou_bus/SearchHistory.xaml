@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nantou_bus.SearchHistory"
+             Title="起訖站查詢">
+    <ContentPage.Content>
+        <StackLayout x:Name="mainstack" Orientation="Vertical" Margin="10">
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <Entry x:Name="StartRouteSearchBar" HorizontalOptions="FillAndExpand" Placeholder="起站"/>
+                <Button Text="查詢記錄"  Clicked="SearchH_Clicked" />
+                <Button Text="預存位置"  Clicked="SearchF_Clicked" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <Entry x:Name="ReachRouteSearchBar" HorizontalOptions="FillAndExpand" Placeholder="訖站"/>
+                <Button Text="查詢記錄"  Clicked="SearchH2_Clicked" />
+                <Button Text="預存位置"  Clicked="SearchF2_Clicked" />
+            </StackLayout>
+            <Button Text="起訖站交換"  HorizontalOptions="FillAndExpand" Clicked="Exchange_Clicked"/>
+            <Button Text="搜尋"  HorizontalOptions="FillAndExpand" Clicked="SearchNOW_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

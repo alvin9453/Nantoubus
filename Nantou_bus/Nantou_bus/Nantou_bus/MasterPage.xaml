@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nantou_bus.MasterPage"
+             Title="功能選單"
+             >
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical"
+            VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <Image Source="masterbackground2"/>
+            </StackLayout>
+            <ListView x:Name="_MenuItems" VerticalOptions="FillAndExpand" SeparatorVisibility="None" RowHeight="65">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Grid
+                                VerticalOptions="Center"
+                                Padding="15,5,5,5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition Width="260" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Label
+                                Grid.Row="0" Grid.Column="0"
+                                Text ="{Binding Icon, Mode=TwoWay}"
+                                FontSize="25"
+                                FontFamily="FontAwesome"
+                                VerticalTextAlignment="Center"
+                                HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+                            <Label
+                                Grid.Row="0" Grid.Column="1"
+                                Text ="{Binding Title, Mode=TwoWay}"
+                                FontSize="20"
+                                VerticalTextAlignment="Center"
+                                HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+                            </Grid>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

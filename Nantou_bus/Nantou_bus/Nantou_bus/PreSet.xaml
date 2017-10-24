@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nantou_bus.PreSet" 
+             Title="預存位置">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center">
+                    <Label Text="住家" FontSize="Medium" />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="HomeEntry" Placeholder="請輸入站牌名稱" />
+                </StackLayout>
+                
+                <StackLayout Orientation="Vertical"  HorizontalOptions="End">
+                    <Button Text="設定"  Clicked="HomeButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center">
+                    <Label Text="公司" FontSize="Medium"  />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="OfficeEntry" Placeholder="請輸入站牌名稱" />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"  HorizontalOptions="End">
+                    <Button Text="設定" Clicked="OfficeButton_Clicked" />
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center">
+                    <Label Text="學校" FontSize="Medium"  />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="SchoolEntry" Placeholder="請輸入站牌名稱" />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"  HorizontalOptions="End">
+                    <Button Text="設定" Clicked="SchoolButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
