@@ -23,3 +23,15 @@ ITSAFoundry專案平台
 --------------------
 
 網址 : http://of.itsa.org.tw/projects/2956
+
+相關連結
+------------------------------------------
+
+2017-TSOC得獎作品集(P.24為本專案得獎感言) : https://drive.google.com/file/d/1qt8ETXZ_mH8nrdPOpEOshiyEYsIGnWbE/view?usp=sharing
+
+決賽展示投影片 : https://drive.google.com/file/d/1hBbK-8VGW89hqiQ4NQSXSPJbrqsWrhzf/view?usp=sharing
+
+現場參賽海報 : https://drive.google.com/file/d/1Tytuj3lw4rt5Mq_pX3vI57oXThNewy_V/view?usp=sharing
+
+
+
